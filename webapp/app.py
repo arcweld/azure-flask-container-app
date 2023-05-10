@@ -10,6 +10,10 @@ def two_hundred():
 def error():
     abort(500, "oh no some error!")
 
+@app.route("/bonus")
+def bonus():
+    return "<h1>BONUS</h1> <br> <p> this is a bonus page.</p>"
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=80, host="0.0.0.0")
